@@ -45,8 +45,13 @@ extern "C" {
 #  include <stdio.h>
 #endif
 
+#ifndef CGLM_OMIT_NS_FROM_STRUCT_API
+#  define CGLM_OMIT_NS_FROM_STRUCT_API
+#endif
+
 /* core deps */
 #include <cglm/cglm.h>
+#include <cglm/struct.h>
 
 #if defined(_MSC_VER) || defined(__MINGW32__) || defined(__MINGW64__)
 #  define RAYS_WINAPI
